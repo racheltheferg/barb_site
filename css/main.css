@@ -100,7 +100,7 @@ body {
 
 .nav .dropdown {
   float: left;
-  margin-left: 32px;
+  margin-left: 38px;
   margin-top: 12px;
 }
 
@@ -135,6 +135,14 @@ body {
 color: white;
 text-decoration: none;
 background-color: #929292;
+}
+
+.dropdown-menu {
+  padding: 10px 15px;
+}
+
+.dropdown-menu a {
+  padding: 3px 8px;
 }
 
 .headernav {
