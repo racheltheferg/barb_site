@@ -196,17 +196,25 @@ background-color: #929292;
 
 .carousel {
   margin-bottom: 0;
-  position: relative;
   border-bottom: 1px solid #b3b3b3;
+  height: 390px;
 }
 
 .carousel .item {
+  opacity: 0;
+  position: absolute;
+  display: block;
   -webkit-transition: opacity 3s ease-in-out; 
   -moz-transition: opacity 3s ease-in-out; 
   -ms-transition: opacity 3s ease-in-out; 
   -o-transition: opacity 3s ease-in-out; 
   transition: opacity 3s ease-in-out;
 }
+
+.carousel .active, .carousel .item.active {
+  position: relative;
+  opacity: 100;
+}  
   
 .carousel .active.left {
   left: 0;
